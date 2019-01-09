@@ -1,0 +1,35 @@
+{
+  "name": "miller-tests",
+  "version": "0.0.0",
+  "description": "Cybersecurity tests for Ms. Miller",
+  "main": "",
+  "scripts": {
+    "serve": "parcel serve -d dist *.html",
+    "build": "parcel build -d dist *.html",
+    "watch": "parcel watch -d dist *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reujab/miller-tests.git"
+  },
+  "author": "reujab",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/reujab/miller-tests/issues"
+  },
+  "homepage": "https://github.com/reujab/miller-tests#readme",
+  "devDependencies": {
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.15.3",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.8.2",
+    "@material-ui/icons": "^3.0.2",
+    "normalize.css": "^8.0.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
