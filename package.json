@@ -5,8 +5,8 @@
   "main": "",
   "scripts": {
     "serve": "parcel serve -d dist {.,test}/index.html",
-    "build": "parcel build -d dist {.,test}/index.html",
-    "watch": "parcel watch -d dist {.,test}/index.html"
+    "watch": "parcel watch -d dist {.,test}/index.html",
+    "build": "parcel build --public-url ./ -d dist {.,test}/index.html"
   },
   "repository": {
     "type": "git",
