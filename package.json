@@ -1,7 +1,7 @@
 {
-  "name": "miller-tests",
+  "name": "tests",
   "version": "0.0.0",
-  "description": "Cybersecurity tests for Ms. Miller",
+  "description": "Cybersecurity tests",
   "main": "",
   "scripts": {
     "serve": "parcel serve -d dist {.,test}/index.html",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reujab/miller-tests.git"
+    "url": "git+https://github.com/reujab/tests.git"
   },
   "author": "reujab",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/reujab/miller-tests/issues"
+    "url": "https://github.com/reujab/tests/issues"
   },
-  "homepage": "https://github.com/reujab/miller-tests#readme",
+  "homepage": "https://github.com/reujab/tests#readme",
   "devDependencies": {
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
