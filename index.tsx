@@ -25,7 +25,7 @@ export default class Index extends React.Component {
 							<ListItemIcon>
 								<ClassIcon />
 							</ListItemIcon>
-							<ListItemText secondary={`${test.questions} questions`}>{test.title}</ListItemText>
+							<ListItemText secondary={`${test.questions.length} questions`}>{test.title}</ListItemText>
 						</ListItem>
 					))}
 				</List>

@@ -28,8 +28,10 @@
   "dependencies": {
     "@material-ui/core": "^3.8.2",
     "@material-ui/icons": "^3.0.2",
+    "lodash": "^4.17.11",
     "normalize.css": "^8.0.1",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-swipeable-views": "^0.13.0"
   }
 }
