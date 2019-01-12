@@ -111,7 +111,6 @@ export default [
 			<Answer>eSATA</Answer>,
 			<Answer>AGP</Answer>,
 		]}
-		explanation={null}
 	/>,
 
 	<Radio
@@ -152,7 +151,6 @@ export default [
 	// 		<Answer>USB</Answer>,
 	// 		<Answer>ThunderBolt</Answer>,
 	// 	]}
-	// 	explanation={null}
 	// />,
 
 	// <Checkbox
