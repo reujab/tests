@@ -13,7 +13,7 @@ interface Props {
 	question: string
 	ordered?: boolean
 	answers: JSX.Element[]
-	explanation: any
+	explanation?: any
 
 	onAnswer?: (boolean) => void
 	onNext?: () => void
