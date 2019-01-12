@@ -32,7 +32,7 @@ export default class Index extends React.Component<Props, State> {
 
 		this.state = {
 			index: 0,
-			questions: props.children.questions.map(this.fixQuestion.bind(this)),
+			questions: _.shuffle(props.children.questions.map(this.fixQuestion.bind(this))),
 
 			correct: 0,
 			incorrect: 0,
