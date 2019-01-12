@@ -50,7 +50,7 @@ export default class Radio extends React.Component<Props, State> {
 									"disabled",
 									answer.props.correct ? "correct" : null,
 									this.state.answer === answer.props.children && !answer.props.correct ? "incorrect" : null,
-								].filter(a => a).join(" "),
+								].filter(Boolean).join(" "),
 							}}
 							disabled={!!this.state.answer}
 							value={answer.props.children}
