@@ -44,7 +44,7 @@ export default class Index extends React.Component<Props, State> {
 		const props = Object.assign({
 			key: index,
 
-			onAnswer: (answer, correct) => this.setState({
+			onAnswer: (correct) => this.setState({
 				correct: this.state.correct + (correct ? 1 : 0),
 				incorrect: this.state.incorrect + (correct ? 0 : 1),
 			}),

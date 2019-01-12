@@ -1,4 +1,5 @@
 import * as React from "react"
+import Button from "@material-ui/core/Button"
 import Collapse from "@material-ui/core/Collapse"
 import Explanation from "../Explanation"
 import FormControl from "@material-ui/core/FormControl"
@@ -14,7 +15,7 @@ interface Props {
 	answers: JSX.Element[]
 	explanation: any
 
-	onAnswer?: (string, boolean) => void
+	onAnswer?: (boolean) => void
 	onNext?: () => void
 }
 
@@ -47,7 +48,7 @@ export default class CheckBox extends React.Component<Props, State> {
 								disabled: [
 									"disabled",
 									answer.props.correct ? "correct" : null,
-									// this.state.answers === answer.props.children && !answer.props.correct ? "incorrect" : null,
+									this.state.answers.has(answer.props.children) && !answer.props.correct ? "incorrect" : null,
 								].filter(a => a).join(" "),
 							}}
 							disabled={this.state.finalized}
@@ -66,7 +67,28 @@ export default class CheckBox extends React.Component<Props, State> {
 				</FormGroup>
 			</FormControl>
 
-			<Explanation open={this.state.finalized}>{this.props.explanation}</Explanation>
+			<Collapse in={!this.state.finalized}>
+				<Button
+					disabled={this.state.finalized}
+					variant="contained"
+					onClick={() => {
+						this.setState({ finalized: true })
+						this.props.onAnswer(_.isEqual(
+							_.sortBy(Array.from(this.state.answers)),
+							_.sortBy(this.props.answers.filter((answer) => answer.props.correct).map((answer) => answer.props.children)),
+						))
+					}}
+				>
+					Submit
+				</Button>
+			</Collapse>
+
+			<Explanation
+				open={this.state.finalized}
+				onNext={this.props.onNext}
+			>
+				{this.props.explanation}
+			</Explanation>
 		</React.Fragment>
 	}
 }

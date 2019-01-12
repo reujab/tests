@@ -12,7 +12,7 @@ interface Props {
 	answers: JSX.Element[]
 	explanation?: any
 
-	onAnswer?: (string, boolean) => void
+	onAnswer?: (boolean) => void
 	onNext?: () => void
 }
 
@@ -38,7 +38,7 @@ export default class Radio extends React.Component<Props, State> {
 					value={this.state.answer}
 					onChange={(e, answer) => {
 						this.setState({ answer })
-						this.props.onAnswer(answer, answer === this.props.answers.find((answer) => answer.props.correct).props.children)
+						this.props.onAnswer(answer === this.props.answers.find((answer) => answer.props.correct).props.children)
 					}}
 				>
 					{this.props.answers.map((answer) => (
