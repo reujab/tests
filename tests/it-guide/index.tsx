@@ -62,15 +62,15 @@ export default [
 		}
 	/>,
 
-	<Radio
+	<Radio ordered
 		question="What should the setting for a dual-voltage selector switch be on a power supply when using the computer in the United States?"
 		answers={[
+			<Answer>3.3 volts</Answer>,
+			<Answer>5 volts</Answer>,
 			<Answer correct>115 volts</Answer>,
 			<Answer>230 volts</Answer>,
-			<Answer>500 Watts</Answer>,
-			<Answer>750 Watts</Answer>,
 		]}
-		explanation="The 115 volts selection is used in the United States, and the 230 volts selection is used in Europe. The dual-voltage selector does not select wattage."
+		explanation="The 115 volts selection is used in the United States, and the 230 volts selection is used in Europe."
 	/>,
 
 	<Radio
