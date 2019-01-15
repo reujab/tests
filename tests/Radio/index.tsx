@@ -7,8 +7,8 @@ import MuiRadio from "@material-ui/core/Radio"
 import RadioGroup from "@material-ui/core/RadioGroup"
 
 interface Props {
-	question: string
 	ordered?: boolean
+	question: any
 	answers: JSX.Element[]
 	explanation?: any
 
