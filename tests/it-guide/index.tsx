@@ -217,16 +217,16 @@ export default [
 	/>,
 
 	<Radio
-		question="What type of computer is likely to use SO-DIMMS, have an internal power supply, and uses a desktop processor socket?"
+		question="What type of computer is likely to use SO-DIMMS, have an internal power supply, and use a desktop processor socket?"
 		answers={[
-			<Answer correct>laptop</Answer>,
+			<Answer correct>all-in-one desktop</Answer>,
+			<Answer>laptop</Answer>,
 			<Answer>desktop</Answer>,
 			<Answer>smart phone</Answer>,
-			<Answer>printer</Answer>,
 		]}
 		explanation={
 			<React.Fragment>
-				A laptop uses <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung-1GB-DDR2-Laptop-RAM.jpg/1200px-Samsung-1GB-DDR2-Laptop-RAM.jpg">SO-DIMMs</IMG>, a battery, and a CPU.
+				A laptop uses <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung-1GB-DDR2-Laptop-RAM.jpg/1200px-Samsung-1GB-DDR2-Laptop-RAM.jpg">SO-DIMMs</IMG>, a battery, and a CPU, but it doesn't use a desktop processor socket. An <IMG src="https://images-na.ssl-images-amazon.com/images/I/61oJlZWp7RL._SX425_.jpg">all-in-one desktop</IMG> uses a desktop processor socket.
 			</React.Fragment>
 		}
 	/>,
