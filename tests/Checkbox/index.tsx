@@ -49,7 +49,7 @@ export default class CheckBox extends React.Component<Props, State> {
 									"disabled",
 									answer.props.correct ? "correct" : null,
 									this.state.answers.has(answer.props.children) && !answer.props.correct ? "incorrect" : null,
-								].filter(a => a).join(" "),
+								].filter(Boolean).join(" "),
 							}}
 							disabled={this.state.finalized}
 							value={answer.props.children}
