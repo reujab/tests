@@ -318,6 +318,7 @@ export default [
 		explanation="All of the answer choices are good questions to ask, but the question you should ask first is if there is still a warranty because if it still has a warranty, the manufacturer might fix it for you."
 	/>,
 
+	// Chapter 3
 	<Checkbox
 		question="Which of the following are form factors for motherboards?"
 		answers={[
@@ -447,7 +448,7 @@ export default [
 		}
 	/>,
 
-	// Chapter 3
+	// Chapter 4
 	<Checkbox
 		question="Who are the two major manufacturers of processors?"
 		answers={[
