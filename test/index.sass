@@ -15,14 +15,17 @@ div[role="tooltip"]
 	padding: 10px
 
 .answer
-	&.disabled > span:nth-child(2)
-		color: lighten(black, 25%)
+	&.disabled, &.disabled > span:nth-child(2)
+		color: lighten(black, 25%) !important
 
 	&.correct > span:first-child
 		color: #43a047
 
 	&.incorrect > span:first-child
 		color: #f44336
+
+	&.correct:after
+		border-bottom-color: #43a047 !important
 
 .progress
 	& > div:first-child
