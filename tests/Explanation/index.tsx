@@ -8,7 +8,7 @@ interface Props {
 	open: boolean
 	children: any
 
-	onNext?: () => void
+	onNext: () => void
 }
 
 export default class Explanation extends React.Component<Props> {
