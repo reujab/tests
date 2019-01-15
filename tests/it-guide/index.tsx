@@ -15,9 +15,9 @@ export default [
 			<Answer>VGA, S-Video, DVI, HDMI, DisplayPort, BNC</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				<IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SVGA_port.jpg/300px-SVGA_port.jpg">VGA</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/S-Video_7-pin_quasi-DIN_connector.JPG/170px-S-Video_7-pin_quasi-DIN_connector.JPG">S-Video</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/3/37/Dvi-cable.jpg">DVI</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Adapter_dvi_hdmi_S7302224_wp.jpg/220px-Adapter_dvi_hdmi_S7302224_wp.jpg">HDMI</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Displayport-cable.jpg">DisplayPort</IMG>, and <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Thunderbolt_3_interface_USB-C_ports.jpg/220px-Thunderbolt_3_interface_USB-C_ports.jpg">ThunderBolt</IMG> are all video ports. <IMG src="https://cdn.head-fi.org/a/2446444.jpg">TRS</IMG> transmits audio, and <IMG src="https://upload.wikimedia.org/wikipedia/commons/b/b9/BNC_connector_50_ohm_male.jpg">BNC</IMG> is a connector used for coaxial cables.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -28,9 +28,9 @@ export default [
 			<Answer>Hi-Speed</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				Hi-Speed is <IMG src="https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/82b2f2db-3a3f-4641-a4e9-ba1b8e20dddc.jpg._CB303372833_.jpg">USB 2.0</IMG>, and Super-Speed is <IMG src="https://sgcdn.startech.com/005329/media/products/gallery_large/USB31ACXM.C.jpg">USB 3.0</IMG>. USB 3.0 is faster than USB 2.0.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -43,9 +43,9 @@ export default [
 			<Answer>audio and video</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				An <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Digital_coaxial_audio_cable_%28orange%29.jpg/175px-Digital_coaxial_audio_cable_%28orange%29.jpg">S/PDIF</IMG> (Sony/Phillips Digital Interface) port provides high quality digital sound to an audio system, often a home theater.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -57,9 +57,9 @@ export default [
 			<Answer>It increases the surface area of the motherboard, making it less likely to overheat.</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				<IMG src="https://www.gamingscan.com/wp-content/uploads/2018/01/atx-vs-micro-atx-vs-mini-atx-1.jpg">Mini-ITX and microATX fit into ATX</IMG> chassis because of standoffs. <IMG src="https://ischoolsclsbatungbakal.files.wordpress.com/2009/06/expansion-slot.jpg">Expansion slots</IMG> do not help with overheating.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -83,9 +83,9 @@ export default [
 			<Answer>FireWire (IEEE 1394)</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				<IMG src="https://images-na.ssl-images-amazon.com/images/I/71qyPtLzX5L._SY355_.jpg">SATA</IMG> replaced <IMG src="https://images-na.ssl-images-amazon.com/images/I/41KqrBdXtZL._SL500_AC_SS350_.jpg">IDE</IMG> as the most common interface in 2007. <IMG src="https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/82b2f2db-3a3f-4641-a4e9-ba1b8e20dddc.jpg._CB303372833_.jpg">USB</IMG> and <IMG src="https://images-na.ssl-images-amazon.com/images/I/41xY1jGfoeL._SY355_.jpg">FireWire</IMG> are most commonly used by external hard drives.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -98,9 +98,9 @@ export default [
 			<Answer>24</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				The original ATX used a <IMG src="https://classconnection.s3.amazonaws.com/539/flashcards/2245539/jpg/20-pin_p1-147E02B12666514A922-thumb400.jpg">20-pin power connector</IMG>. Later versions use <IMG src="http://www.playtool.com/pages/psuconnectors/main24index.jpg">24 pins</IMG>. <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SVGA_port.jpg/300px-SVGA_port.jpg">VGA</IMG> uses 15 pins to transmit video, and video cards often use <IMG src="https://c.76.my/Malaysia/6-pin-f-to-m-8-pin-pci-e-power-cable-pcie-gpu-graphics-card-lala55-1703-26-lala55@18.jpg">6- or 8-pin power connectors</IMG>.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -123,9 +123,9 @@ export default [
 			<Answer>eSATA hard drive</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				Video cards often accept an additional <IMG src="https://c.76.my/Malaysia/6-pin-f-to-m-8-pin-pci-e-power-cable-pcie-gpu-graphics-card-lala55-1703-26-lala55@18.jpg">6- or 8-pin power connector</IMG> to power the GPU. <IMG src="https://www.disctech.com/SCASite/product_images/ST3250620A_1000-3.jpg">IDE hard drives</IMG> use <IMG src="https://upload.wikimedia.org/wikipedia/commons/3/31/Molex_female_connector.jpg">4-pin Molex connectors</IMG>. CPUs are powered by the motherboard and the <IMG src="http://www.remotelan.net/tutorials/power_supply/pictures/p4_atx.JPG">4-pin auxiliary connector</IMG>. <IMG src="https://upload.wikimedia.org/wikipedia/commons/7/76/Esatap_port.JPG">eSATAp</IMG> hard drives are powered by the motherboard.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -137,9 +137,9 @@ export default [
 			<Answer>It powers the CPU.</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				<IMG src="https://images-na.ssl-images-amazon.com/images/I/51wbmKjnHQL._SX425_.jpg">USB hubs</IMG> are powered by the motherboard. The CPU is powered by the motherboard and the <IMG src="http://www.remotelan.net/tutorials/power_supply/pictures/p4_atx.JPG">4-pin auxiliary connector</IMG>.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -164,9 +164,9 @@ export default [
 			<Answer>desktop computer</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				<IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung-1GB-DDR2-Laptop-RAM.jpg/1200px-Samsung-1GB-DDR2-Laptop-RAM.jpg">SO-DIMM memory modules</IMG> are most likely to be found in laptops and compact all-in-one desktops.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -190,9 +190,9 @@ export default [
 			<Answer>It troubleshoots network connections.</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				A <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BIOS_POST_card.jpg/1200px-BIOS_POST_card.jpg">POST card</IMG> reports errors that prevent the computer from successfully booting. S.M.A.R.T. (Self-Monitoring, Analysis and Reporting Technology) reports a failing hard drive.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -225,9 +225,9 @@ export default [
 			<Answer>printer</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				A laptop uses <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung-1GB-DDR2-Laptop-RAM.jpg/1200px-Samsung-1GB-DDR2-Laptop-RAM.jpg">SO-DIMMs</IMG>, a battery, and a CPU.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -240,9 +240,9 @@ export default [
 			<Answer>They are an obsolete remnant of the original ATX specification.</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				<IMG src="https://images-na.ssl-images-amazon.com/images/I/61qvJd%2B7OwL._SX466_.jpg">Standoffs</IMG> prevent a short that could happen if the lines or circuits on the bottom of the motherboard touch the case while the system is running.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -255,9 +255,9 @@ export default [
 			<Answer>You match the colors of the wires with the colors of the pins.</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				You always read the motherboard documentation (user guide). The <IMG src="https://i.ytimg.com/vi/b6q4h-lNHrU/maxresdefault.jpg">pins</IMG> are not always colored.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -270,9 +270,9 @@ export default [
 			<Answer>8</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				The <IMG src="https://c1.neweggimages.com/NeweggImage/ProductImage/12-423-184-01.jpg">CPU auxiliary power connector</IMG> has four pins.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -328,9 +328,9 @@ export default [
 			<Answer>microITX</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				<IMG src="https://www.gamingscan.com/wp-content/uploads/2018/01/atx-vs-micro-atx-vs-mini-atx-1.jpg">ATX, microATX, and Mini-ITX</IMG> are the three most popular form factors. The Mini-ITX and microITX form factors do not exist.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -352,9 +352,9 @@ export default [
 			<Answer>Southbridge</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				The <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chipset_schematic.svg/300px-Chipset_schematic.svg.png">Northbridge</IMG> communicates with fast processes, such as the CPU, the RAM, and the GPU. The Southbridge communicates with all I/O functions, such as USB.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -378,9 +378,9 @@ export default [
 			<Answer>rider card</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				A <IMG src="https://www.bhphotovideo.com/images/images1500x1500/istarusa_dd_666_1u_pcie_x16_to_1322300.jpg">riser card</IMG> allows you to insert expansion cards at a 90° angle. Ryzen is a series of AMD processors.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -393,9 +393,9 @@ export default [
 			<Answer>Southbridge</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				The <IMG src="https://img.purch.com/o/aHR0cDovL3d3dy5sYXB0b3BtYWcuY29tL2ltYWdlcy93cC9wdXJjaC1hcGkvaW5jb250ZW50LzIwMTYvMDYvNTF5MXY3MXFyd2wuanBn">TPM (trusted platform module) chip</IMG> stores encryption keys used to secure the hard drive.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -441,9 +441,9 @@ export default [
 			<Answer>The failing CPU is resetting the date on every boot.</Answer>,
 		]}
 		explanation={
-			<span>
+			<React.Fragment>
 				The <IMG src="https://www.cpureport.com/wp-content/uploads/2014/12/CMOS-battery1.jpg">CMOS battery</IMG> powers the CMOS, which stores the date when the computer is powered off. If there is no power to the computer and the CMOS battery is dead, the date and time will be lost. Memory (RAM) is lost after the machine is powered off, but that is not the underlying issue.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -521,9 +521,9 @@ export default [
 		question="How many pins are on a DDR DIMM?"
 		answer={184}
 		explanation={
-			<span>
+			<React.Fragment>
 				A <IMG src="https://www.alternate.co.uk/p/o/i/Apacer_DIMM_512_MB_DDR_400__RAM@@i9ida0.jpg">DDR DIMM</IMG> 184 pins.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -531,9 +531,9 @@ export default [
 		question="How many pins are on a DDR2 DIMM?"
 		answer={240}
 		explanation={
-			<span>
+			<React.Fragment>
 				A <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Swissbit_2GB_PC2-5300U-555.jpg/300px-Swissbit_2GB_PC2-5300U-555.jpg">DDR2 DIMM</IMG> has 240 pins.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -541,9 +541,9 @@ export default [
 		question="How many pins are on a DDR3 DIMM?"
 		answer={240}
 		explanation={
-			<span>
+			<React.Fragment>
 				A <IMG src="https://www.goodram.com/wp-content/uploads/dram-ddr3-dimm-bok.jpg">DDR3 DIMM</IMG> has 240 pins.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
@@ -551,9 +551,9 @@ export default [
 		question="How many pins are on a DDR4 DIMM?"
 		answer={288}
 		explanation={
-			<span>
+			<React.Fragment>
 				A <IMG src="https://www.goodram.com/wp-content/uploads/dram-ddr4-dimm-1.jpg">DDR4 DIMM</IMG> has 288 pins.
-			</span>
+			</React.Fragment>
 		}
 	/>,
 
