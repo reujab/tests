@@ -6,7 +6,7 @@ import Input from "../Input"
 import Radio from "../Radio"
 
 export default [
-	// Chapter 1
+	// Chapter 1: Reviewing the Basics
 	<Radio
 		question="Which of the following are all video ports?"
 		answers={[
@@ -16,7 +16,7 @@ export default [
 		]}
 		explanation={
 			<React.Fragment>
-				<IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SVGA_port.jpg/300px-SVGA_port.jpg">VGA</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/S-Video_7-pin_quasi-DIN_connector.JPG/170px-S-Video_7-pin_quasi-DIN_connector.JPG">S-Video</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/3/37/Dvi-cable.jpg">DVI</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Adapter_dvi_hdmi_S7302224_wp.jpg/220px-Adapter_dvi_hdmi_S7302224_wp.jpg">HDMI</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Displayport-cable.jpg">DisplayPort</IMG>, and <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Thunderbolt_3_interface_USB-C_ports.jpg/220px-Thunderbolt_3_interface_USB-C_ports.jpg">ThunderBolt</IMG> are all video ports. <IMG src="https://cdn.head-fi.org/a/2446444.jpg">TRS</IMG> transmits audio, and <IMG src="https://upload.wikimedia.org/wikipedia/commons/b/b9/BNC_connector_50_ohm_male.jpg">BNC</IMG> is a connector used for coaxial cables.
+				<IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SVGA_port.jpg/300px-SVGA_port.jpg">VGA</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/S-Video_7-pin_quasi-DIN_connector.JPG/170px-S-Video_7-pin_quasi-DIN_connector.JPG">S-Video</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/3/37/Dvi-cable.jpg">DVI</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Adapter_dvi_hdmi_S7302224_wp.jpg/220px-Adapter_dvi_hdmi_S7302224_wp.jpg">HDMI</IMG>, <IMG src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Displayport-cable.jpg">DisplayPort</IMG>, and <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Thunderbolt_3_interface_USB-C_ports.jpg/220px-Thunderbolt_3_interface_USB-C_ports.jpg">Thunderbolt</IMG> are all video ports. <IMG src="https://cdn.head-fi.org/a/2446444.jpg">TRS</IMG> transmits audio, and <IMG src="https://upload.wikimedia.org/wikipedia/commons/b/b9/BNC_connector_50_ohm_male.jpg">BNC</IMG> is a connector used for coaxial cables.
 			</React.Fragment>
 		}
 	/>,
@@ -150,7 +150,7 @@ export default [
 			<Answer>SATA</Answer>,
 			<Answer>PATA</Answer>,
 			<Answer>USB</Answer>,
-			<Answer>ThunderBolt</Answer>,
+			<Answer>Thunderbolt</Answer>,
 		]}
 	/>,
 
@@ -592,10 +592,213 @@ export default [
 		explanation="ECC (error-correcting code) memory can automatically correct a failing RAM stick. Because ECC memory costs more and doesn't provide much of a benefit, most computer users don't use ECC memory. A server would most benefit from ECC memory."
 	/>,
 
+	<Radio
+		question="You have just upgraded memory on a computer from 1 GB to 2 GB by adding one DIMM. When you first turn on the PC, the memory count shows only 1 GB. Which of the following is most likely the source of the problem?"
+		answers={[
+			<Answer correct>The new DIMM is not properly seated.</Answer>,
+			<Answer>Windows is giving an error because it likely became corrupted while the computer was disassembled.</Answer>,
+			<Answer>The new DIMM you installed is faulty.</Answer>,
+			<Answer>The DIMM is installed in the wrong slot.</Answer>,
+		]}
+		explanation="If you just installed a DIMM, and it is not recognized, it likely is not seated properly. It is less likely that a new DIMM is faulty."
+	/>,
+
+	// Chapter 5
+	<Checkbox
+		question="What are the two major components of a processor cooling assembly?"
+		answers={[
+			<Answer correct>heat sink</Answer>,
+			<Answer correct>fan</Answer>,
+			<Answer>water</Answer>,
+			<Answer>heat spreader</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				A <IMG src="https://5.imimg.com/data5/RF/DE/MY-40049777/computer-heat-sink-500x500.jpg">heat sink</IMG> and <IMG src="https://images-na.ssl-images-amazon.com/images/I/41Psb%2BDytOL._SX425_.jpg">fan</IMG> is the most common method of cooling CPUs. Water would only be used with liquid cooling, a less common method.
+			</React.Fragment>
+		}
+	/>,
+
+	<Checkbox
+		question="Which two components in a system might give out a loud whining noise?"
+		answers={[
+			<Answer correct>PSU</Answer>,
+			<Answer correct>hard drive</Answer>,
+			<Answer>fan</Answer>,
+			<Answer>video card</Answer>,
+		]}
+	/>,
+
+	<Radio ordered
+		question="What is a reasonable wattage capacity for a power supply to be used wit ha system that contains a DVD drive, three hard drives, and a high-end-video card?"
+		answers={[
+			<Answer>150 Watts</Answer>,
+			<Answer>250 Watts</Answer>,
+			<Answer correct>700 Watts</Answer>,
+			<Answer>1000 Watts</Answer>,
+		]}
+	/>,
+
+	<Radio
+		question="When you boot up a computer and hear a single beep, but the screen is blank, what can you assume is the source of the problem?"
+		answers={[
+			<Answer correct>monitor</Answer>,
+			<Answer>memory</Answer>,
+			<Answer>CPU</Answer>,
+			<Answer>keyboard</Answer>,
+		]}
+		explanation="POST sounds either no beep or one beep when there is no boot error, so if POST sounds one beep with no display, the issue is with the monitor."
+	/>,
+
+	<Checkbox
+		question="Which of the following are physical drives?"
+		answers={[
+			<Answer correct>magnetic drive</Answer>,
+			<Answer correct>solid-state drive</Answer>,
+			<Answer correct>hybrid drive</Answer>,
+			<Answer>dynamic drive</Answer>,
+			<Answer>static drive</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				<IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Laptop-hard-drive-exposed.jpg/220px-Laptop-hard-drive-exposed.jpg">Magnetic drives</IMG> have moving parts, are cheaper, and slower. <IMG src="https://ae01.alicdn.com/kf/HTB17ycxbDTI8KJjSsphq6AFppXaS/Goldenfir-SATA-III-240GB-SSD-2-5-solid-state-drive-disk-240gb-ssd-hard-drive-for.jpg_640x640.jpg">SSDs</IMG> have no moving parts, are significantly faster, and cost more. <IMG src="https://images-na.ssl-images-amazon.com/images/I/5131YWCyDzL._SX425_.jpg">Hybrid drives</IMG> combine the technologies of SSDs and HDDs.
+			</React.Fragment>
+		}
+	/>,
+
+	<Input
+		question="What is the transfer speed of SATA I in Gbps?"
+		answer={1.5}
+		explanation="SATA I has a transfer speed of 1.5 Gbps."
+	/>,
+
+	<Input
+		question="What is the transfer speed of SATA II in Gbps?"
+		answer={3}
+		explanation="SATA I has a transfer speed of 3 Gbps."
+	/>,
+
+	<Input
+		question="What is the transfer speed of SATA III in Gbps?"
+		answer={16}
+		explanation="SATA I has a transfer speed of 16 Gbps."
+	/>,
+
+	<Checkbox ordered
+		question="Which of the following RAID arrays improve performance?"
+		answers={[
+			<Answer correct>RAID 0</Answer>,
+			<Answer>RAID 1</Answer>,
+			<Answer correct>RAID 5</Answer>,
+			<Answer correct>RAID 6</Answer>,
+			<Answer correct>RAID 10</Answer>,
+		]}
+		explanation="RAID 0 is striping, RAID 1 is mirroring, RAID 5 is striping and parity, RAID 6 is striping and dual parity, and RAID 10 is striping and mirroring."
+	/>,
+
+	<Checkbox ordered
+		question="Which of the following RAID arrays provide fault tolerance?"
+		answers={[
+			<Answer>RAID 0</Answer>,
+			<Answer correct>RAID 1</Answer>,
+			<Answer correct>RAID 5</Answer>,
+			<Answer correct>RAID 6</Answer>,
+			<Answer correct>RAID 10</Answer>,
+		]}
+		explanation="RAID 0 is striping, RAID 1 is mirroring, RAID 5 is striping and parity, RAID 6 is striping and dual parity, and RAID 10 is striping and mirroring."
+	/>,
+
+	<Checkbox ordered
+		question="Which of the following RAID arrays require at least four disks?"
+		answers={[
+			<Answer>RAID 0</Answer>,
+			<Answer>RAID 1</Answer>,
+			<Answer>RAID 5</Answer>,
+			<Answer correct>RAID 6</Answer>,
+			<Answer correct>RAID 10</Answer>,
+		]}
+		explanation="RAID 0 requires at least two disks, RAID 1 requires at least two disks, RAID 5 requires at least three disks, RAID 6 requires at least four disks, and RAID 10 requires at least four disks."
+	/>,
+
+	<Radio
+		question="Which file system is used by Blu-ray discs?"
+		answers={[
+			<Answer correct>UDF</Answer>,
+			<Answer>CDfs</Answer>,
+			<Answer>NTFS</Answer>,
+			<Answer>ISO</Answer>,
+			<Answer>exFAT</Answer>,
+		]}
+		explanation="UDF (Universal Disk Format) is used by Blu-ray, DVDs, and CDs. CDfs is a virtual file system for Unix-like operating systems. NTFS is used by Windows."
+	/>,
+
+	<Radio
+		question="Which Windows command do you use to test for bad sectors?"
+		answers={[
+			<Answer correct>chkdsk</Answer>,
+			<Answer>fsck</Answer>,
+			<Answer>fstab</Answer>,
+			<Answer>chkfs</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				<tt>chkdsk</tt> is used on Windows, and <tt>fsck</tt> is used on Linux.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio
+		question="You want to install an SSD drive in your desktop computer, but the drive is far too narrow to fit snugly into the bays of your computer case. Which of the following do you do?"
+		answers={[
+			<Answer correct>Buy a bay adapter that will allow you to install the narrow drive in a desktop case bay.</Answer>,
+			<Answer>This SSD is designed for a laptop. Flash BIOS/UEFI so that your system will support a laptop hard drive.</Answer>,
+			<Answer>Use a special SATA controller card that will support the narrow drive.</Answer>,
+		]}
+	/>,
+
+	// Chapter 7
+	<Checkbox
+		question="Which of the following are functions of an operating system?"
+		answers={[
+			<Answer correct>It runs applications.</Answer>,
+			<Answer correct>It provides an interface for users.</Answer>,
+			<Answer correct>It stores and manipulates files.</Answer>,
+			<Answer>It assigns IRQ channels, DMAs, and I/O addresses.</Answer>,
+			<Answer>It performs a POST test.</Answer>,
+		]}
+		explanation="An operating system runs applications, provides an interfadce for users, and manages files. Your firmware assigns an IRQ channel, DMA, and I/O addresses and performs a POST test."
+	/>,
+
+	<Checkbox
+		question="Which of the following file extensions indicate the file is compressed?"
+		answers={[
+			<Answer correct>.zip</Answer>,
+			<Answer correct>.rar</Answer>,
+			<Answer correct>.7z</Answer>,
+			<Answer correct>.gz</Answer>,
+			<Answer correct>.cab</Answer>,
+			<Answer>.tar</Answer>,
+			<Answer>.iso</Answer>,
+		]}
+		explanation="ZIP, RAR, 7z, gunzipped, and cabinet files are all compressed archives. Tarballs are like uncompressed ZIP files. Tarballs are often compressed using gunzip, producing a .tar.gz extension. ISO contain uncompressed files that go on a disc."
+	/>,
+
+	<Radio
+		question="Which file system does Windows primarily use?"
+		answers={[
+			<Answer correct>NTFS</Answer>,
+			<Answer>HFS</Answer>,
+			<Answer>HFS+</Answer>,
+			<Answer>ext4</Answer>,
+			<Answer>btrfs</Answer>,
+		]}
+		explanation="Windows primarily uses NTFS. macOS primarily uses HFS+. Linux primarily uses ext4 and occasionally btrfs."
+	/>,
+
 	// Custom
 	<Input
 		question="A system administrator needs remote access to a Linux server. What port must be open?"
 		answer={22}
 		explanation="SSH (port 22) adds the capability for remote access to a Linux machine. RDP (port 3389) is only used by Windows."
-	/>
+	/>,
 ]
