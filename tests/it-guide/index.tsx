@@ -231,6 +231,50 @@ export default [
 		}
 	/>,
 
+	<Radio
+		question="While troubleshooting a computer, you suspect the network port on the computer is not functioning. Which tool would be most helpful?"
+		answers={[
+			<Answer correct>loopback plug</Answer>,
+			<Answer>cable tester</Answer>,
+			<Answer>multimeter</Answer>,
+			<Answer>crimper</Answer>
+		]}
+		explanation={
+			<React.Fragment>
+				A <IMG src="https://showmecables-static.scdn3.secure.raxcdn.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/r/j/rj45-loopback-plug-1.jpg">loopback plug</IMG> will tell you if a port is malfunctioning. A <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Cable-tester-and-analyzer-0c.jpg/1200px-Cable-tester-and-analyzer-0c.jpg">cable tester</IMG> tests cables. A <IMG src="https://images-na.ssl-images-amazon.com/images/I/71ZtiRvPd1L._SX425_.jpg">multimeter</IMG> measures electric current and voltage. A <IMG src="https://media.digikey.com/Photos/Mueller%20Photos/BU-CRIMPER.JPG">crimper</IMG> conjoins two wires.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio
+		question="While troubleshooting your computer, the system fails at the beginning of the boot and nothing appears on your screen. Which tool would be most helpful?"
+		answers={[
+			<Answer correct>POST card</Answer>,
+			<Answer>cable tester</Answer>,
+			<Answer>recovery disk</Answer>,
+			<Answer>hammer</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				If the computer is failing to boot without displaying an error, a <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BIOS_POST_card.jpg/1200px-BIOS_POST_card.jpg">POST card</IMG> would be most helpful. A recovery disk likely wouldn't help because the computer would be unable to boot to it.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio
+		question="A hard drive is not working and you suspect the Molex power connector from the power supply might be the source of the problem. Which tool would be most helpful?"
+		answers={[
+			<Answer correct>multimeter</Answer>,
+			<Answer>cable tester</Answer>,
+			<Answer>crimper</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				If you suspect a power issue, the most helpful tool would be a <IMG src="https://images-na.ssl-images-amazon.com/images/I/71ZtiRvPd1L._SX425_.jpg">multimeter</IMG>, a device that measures electric current and voltage. A cable tester would not be useful in troubleshooting a power issue.
+			</React.Fragment>
+		}
+	/>,
+
 	// Chapter 2
 	<Radio
 		question="What is the purpose of standoffs installed between the motherboard and the desktop case?"
@@ -318,7 +362,262 @@ export default [
 		explanation="All of the answer choices are good questions to ask, but the question you should ask first is if there is still a warranty because if it still has a warranty, the manufacturer might fix it for you."
 	/>,
 
-	// Chapter 3
+	// Chapters 1 and 2: Test
+	<Radio
+		question="When handling motherboards, cards, or drives, which statement is accurate?"
+		answers={[
+			<Answer correct>You should hold expansion cards by the edges.</Answer>,
+			<Answer>You should touch any soldered components on a card.</Answer>,
+			<Answer>You should touch edge connectors.</Answer>,
+			<Answer>You should touch chips on the device.</Answer>,
+		]}
+		explanation="Never touch soldered components, connectors, or chips."
+	/>,
+
+	// TODO: matching:
+	// Bluetooth: a short-range wireless technology used to connect two devices in a small personal network
+	// POST: a series of tests performed by the startup UEFI/BIOS when you first turn on a computer
+	// PCIe: a slot used for expansion cards or video cards on a motherboard
+	// microATX: reduces the total cost of a system by reducing the number of expansion slots on the motherboard, reducing the power supplied to the board, and allowing for a smaller case size
+	// DisplayPort: transmits digital video and audio and is slowly replacing VGA and DVI
+	// CPU: also called the processor, or microprocessor, does most of the processing of data and instructions for the entire system
+	// DIMM: a type of memory slot found on a desktop motherboard
+	// airplane mode: a computer is said to be in this mode when all wireless technologies are turned off
+	// SO-DIMM: a smaller type of memory slot typically used for laptops
+	// heat sink: draws heat from the CPU and pipes it to a fan, which then blows heat out of the case
+
+	<Radio ordered
+		question="Does a system always need the 4-pin auxiliary power connector?"
+		answers={[
+			<Answer>Yes.</Answer>,
+			<Answer correct>No.</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				Modern systems do not require the <IMG src="http://www.remotelan.net/tutorials/power_supply/pictures/p4_atx.JPG">4-pin auxiliary connector</IMG>.
+			</React.Fragment>
+		}
+	/>,
+
+	// TODO: matching:
+	// ZIF connector: a type of connector that must be lifted up in order to be disconnected
+	// service manual: a document from the manufacturer that describes how to disassemble a device
+	// expansion slot: a connector on the motherboard that allows the insertion of a card
+	// Power SW: controls power to the motherboard and must be connected to power the PC up
+	// ESD strap: you clip it to the side of the computer case to dissipate any charge between you and the computer
+	// Reset SW: switch used to reboot a computer
+	// front panel header: a connector on a motherboard that consists of pins that stick up from the board
+	// Power LED +/-: positive / negative LED that controls the power light and indicates the power is on
+	// spacer: keeps the motherboard from touching the case
+	// HDD LED: controls the drive activity light on the front panel that lights up when any SATA or IDE device is in use
+
+	<Radio
+		question="What are programs stored on the motherboard called?"
+		answers={[
+			<Answer correct>firmware</Answer>,
+			<Answer>blob</Answer>,
+			<Answer>instruction set</Answer>,
+			<Answer>package</Answer>,
+		]}
+	/>,
+
+	<Radio ordered
+		question="Are you safe to begin working inside the case immediately after you unplug the computer from the power outlet?"
+		answers={[
+			<Answer>Yes.</Answer>,
+			<Answer correct>No.</Answer>,
+		]}
+		explanation="You must hold the power button down after unplugging the computer."
+	/>,
+
+	<Radio
+		question="What general-purpose tool can measure characteristics of electricity in a variety of devices?"
+		answers={[
+			<Answer correct>multimeter</Answer>,
+			<Answer>POST card</Answer>,
+			<Answer>loopback plug</Answer>,
+			<Answer>cable tester</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				A <IMG src="https://images-na.ssl-images-amazon.com/images/I/71ZtiRvPd1L._SX425_.jpg">multimeter</IMG> measures electric current and voltage. A <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BIOS_POST_card.jpg/1200px-BIOS_POST_card.jpg">POST card</IMG> reports errors that prevent the computer from successfully booting. A <IMG src="https://showmecables-static.scdn3.secure.raxcdn.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/r/j/rj45-loopback-plug-1.jpg">loopback plug</IMG> will tell you if a port is malfunctioning. A <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Cable-tester-and-analyzer-0c.jpg/1200px-Cable-tester-and-analyzer-0c.jpg">cable tester</IMG> tests cables.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio
+		question="What audio port connects to an external home theater audio system, providing digital audio output?"
+		answers={[
+			<Answer correct>S/PDIF</Answer>,
+			<Answer>FireWire</Answer>,
+			<Answer>Thunderbolt</Answer>,
+			<Answer>eSATA</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				An <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Digital_coaxial_audio_cable_%28orange%29.jpg/175px-Digital_coaxial_audio_cable_%28orange%29.jpg">S/PDIF</IMG> (Sony/Phillips Digital Interface) port provides high quality digital sound to an audio system, often a home theater. <IMG src="https://images-na.ssl-images-amazon.com/images/I/41xY1jGfoeL._SY355_.jpg">FireWire</IMG> can transmit any data. <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Thunderbolt_3_interface_USB-C_ports.jpg/220px-Thunderbolt_3_interface_USB-C_ports.jpg">Thunderbolt</IMG> combines PCIe and DisplayPort into two serial signals, and additionally provides DC power, all in one cable. <IMG src="https://upload.wikimedia.org/wikipedia/commons/7/76/Esatap_port.JPG">eSATA</IMG> (External SATA) allows SATA devices to be connected externally.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio
+		question="What tool can help discover and report computer errors and conflicts that occur when you first turn on a computer and before the operating system is launched?"
+		answers={[
+			<Answer correct>POST card</Answer>,
+			<Answer>BIOS memory</Answer>,
+			<Answer>CMOS firmware</Answer>,
+			<Answer>ROM module</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				A <IMG src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BIOS_POST_card.jpg/1200px-BIOS_POST_card.jpg">POST card</IMG> reports errors that prevent the computer from successfully booting.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio
+		question="Which statement is a good practice when working inside a computer case?"
+		answers={[
+			<Answer correct>Touch the inside of a powered computer.</Answer>,
+			<Answer>Don't hold expansion cards by the edge connectors.</Answer>,
+			<Answer>Touch microchips with a magnetized screwdriver.</Answer>,
+			<Answer>Don't remove loose jewelry.</Answer>,
+		]}
+		explanation="You should never touch the inside of a powered computer. You should never hold cards by the connectors. You should only touch screws with screwdrivers. Always remove loose jewelry before working inside a computer."
+	/>,
+
+	<Radio
+		question="Which statement is not true regarding motherboards?"
+		answers={[
+			<Answer correct>They have a heat sink on the PCIe slots.</Answer>,
+			<Answer>They have slots for DIMMs.</Answer>,
+			<Answer>They have CPU sockets.</Answer>,
+			<Answer>They are also called a system board.</Answer>,
+		]}
+		explanation="Motherboards do not have heat sinks."
+	/>,
+
+	<Radio
+		question="Which power connector will a system always require?"
+		answers={[
+			<Answer correct>P1 power connector</Answer>,
+			<Answer>6-pin PCIe power connector</Answer>,
+			<Answer>4-pin auxiliary</Answer>,
+			<Answer>8-pin PCIe power connector</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				The <IMG src="http://fce-study.netdna-ssl.com/images/upload-flashcards/back/2/7/57472931_m.jpg">P1 power connector</IMG> powers the motherboard.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio
+		question="When is it okay to touch the inside of a computer that is turned on?"
+		answers={[
+			<Answer correct>When using a multimeter to measure voltage output.</Answer>,
+			<Answer>When reassembling the computer.</Answer>,
+			<Answer>When disassembling the computer.</Answer>,
+			<Answer>When a qualified electrician is present.</Answer>,
+		]}
+	/>,
+
+	<Radio ordered
+		question="Are functions that used to be provided by expansion cards are more often found as onboard ports today?"
+		answers={[
+			<Answer correct>Yes.</Answer>,
+			<Answer>No.</Answer>,
+		]}
+	/>,
+
+	<Radio
+		question="What do you call a connector on a motherboard that consists of pins that stick up from the board?"
+		answers={[
+			<Answer correct>header</Answer>,
+			<Answer>socket</Answer>,
+			<Answer>jumper</Answer>,
+			<Answer>pin array</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				<IMG src="https://i.ytimg.com/vi/b6q4h-lNHrU/maxresdefault.jpg">Headers</IMG> stick up from the motherboard. The <IMG src="https://img.purch.com/how-to-choose-motherboard-2014/w/600/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9RL1kvNDQ4MDkwL29yaWdpbmFsL2xnYS0xMTUwLmpwZw==">socket</IMG> holds the CPU.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio ordered
+		question="How many pins are in the power supply connector that is typically used on most motherboards today?"
+		answers={[
+			<Answer>8</Answer>,
+			<Answer>15</Answer>,
+			<Answer>20</Answer>,
+			<Answer correct>24</Answer>,
+		]}
+		explanation="Older PSUs only supported 20-pin P1 connectors, but modern PSUs provide 24-pin P1 connectors."
+	/>,
+
+	<Radio
+		question="What should be done after reassembling a laptop, but before installing the battery or AC adapter?"
+		answers={[
+			<Answer correct>Gently shake the laptop to ensure nothing is loose inside of the case.</Answer>,
+			<Answer>Press the power button to drain any electricity in the system.</Answer>,
+			<Answer>Remove the keyboard so that you can test proper voltage on the motherboard once the battery and/or AC adapter are reconnected.</Answer>,
+			<Answer>Attach ESD strap alligator clip to a different grounding source</Answer>,
+		]}
+	/>,
+
+	<Radio ordered
+		question="Does an Ethernet port have a connector called an RJ-45 to connect to a network cable?"
+		answers={[
+			<Answer correct>Yes.</Answer>,
+			<Answer>No.</Answer>,
+		]}
+	/>,
+
+	<Radio ordered
+		question="Do some boards designed to support multiple PCIe video cards have additional power connectors on the board to power wattage-hungry cards?"
+		answers={[
+			<Answer correct>Yes.</Answer>,
+			<Answer>No.</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				Some video cards require a <IMG src="https://c.76.my/Malaysia/6-pin-f-to-m-8-pin-pci-e-power-cable-pcie-gpu-graphics-card-lala55-1703-26-lala55@18.jpg">6- or 8-pin power connector</IMG>.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio
+		question="What acronym is another name for static electricity, which can damage chips and destroy motherboards?"
+		answers={[
+			<Answer correct>ESD</Answer>,
+			<Answer>EMI</Answer>,
+			<Answer>LCD</Answer>,
+			<Answer>CRT</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				Always wear an <IMG src="https://images-na.ssl-images-amazon.com/images/I/81iimCtVyKL._SX425_.jpg">ESD (electrostatic discharge) wrist strap</IMG> to prevent damaging components.
+			</React.Fragment>
+		}
+	/>,
+
+	<Radio ordered
+		question="Do hard drives have three connections for cables: one for reading data, one for writing data, and one for power?"
+		answers={[
+			<Answer>Yes.</Answer>,
+			<Answer correct>No.</Answer>,
+		]}
+		explanation={
+			<React.Fragment>
+				Hard drives have two cables: one for reading <b>and</b> writing data (SATA) and one for power.
+			</React.Fragment>
+		}
+	/>,
+
+	// TODO: finish
+
+	// Chapter 3: Reviewing the Basics
 	<Checkbox
 		question="Which of the following are form factors for motherboards?"
 		answers={[
@@ -448,7 +747,19 @@ export default [
 		}
 	/>,
 
-	// Chapter 4
+	<Radio
+		question="When troubleshooting a desktop motherboard, you discover the network port no longer works. What is the best solution to this problem to try first?"
+		answers={[
+			<Answer correct>Update the drivers.</Answer>,
+			<Answer>Replace the motherboard.</Answer>,
+			<Answer>Disable the onboard port and install a network card in an expansion slot.</Answer>,
+			<Answer>Use a wireless network device in a USB port to connect to a wireless network.</Answer>,
+			<Answer>Return the motherboard to the factory for repair.</Answer>,
+		]}
+		explanation="The only free and easiest solution is updating the drivers. If this doesn't work, the next best solution would be using a network card."
+	/>,
+
+	// Chapter 4: Reviewing the Basics
 	<Checkbox
 		question="Who are the two major manufacturers of processors?"
 		answers={[
@@ -581,7 +892,7 @@ export default [
 	/>,
 
 	<Checkbox
-		question="Which of the following devices would most likely use use ECC memory?"
+		question="Which of the following devices are most likely to use ECC memory?"
 		answers={[
 			<Answer correct>server</Answer>,
 			<Answer>laptop</Answer>,
@@ -589,7 +900,7 @@ export default [
 			<Answer>smart phone</Answer>,
 			<Answer>printer</Answer>,
 		]}
-		explanation="ECC (error-correcting code) memory can automatically correct a failing RAM stick. Because ECC memory costs more and doesn't provide much of a benefit, most computer users don't use ECC memory. A server would most benefit from ECC memory."
+		explanation="ECC (error-correcting code) memory can automatically correct one bit in a failing RAM stick. Because ECC memory costs more and doesn't provide much of a benefit, most computer users don't use ECC memory. A server would most benefit from ECC memory."
 	/>,
 
 	<Radio
@@ -603,7 +914,7 @@ export default [
 		explanation="If you just installed a DIMM, and it is not recognized, it likely is not seated properly. It is less likely that a new DIMM is faulty."
 	/>,
 
-	// Chapter 5
+	// Chapter 5: Reviewing the Basics
 	<Checkbox
 		question="What are the two major components of a processor cooling assembly?"
 		answers={[
@@ -742,7 +1053,7 @@ export default [
 		]}
 		explanation={
 			<React.Fragment>
-				<tt>chkdsk</tt> is used on Windows, and <tt>fsck</tt> is used on Linux.
+				<code>chkdsk</code> is used on Windows, and <code>fsck</code> is used on Linux.
 			</React.Fragment>
 		}
 	/>,
@@ -756,7 +1067,7 @@ export default [
 		]}
 	/>,
 
-	// Chapter 7
+	// Chapter 7: Reviewing the Basics
 	<Checkbox
 		question="Which of the following are functions of an operating system?"
 		answers={[
@@ -793,6 +1104,25 @@ export default [
 			<Answer>btrfs</Answer>,
 		]}
 		explanation="Windows primarily uses NTFS. macOS primarily uses HFS+. Linux primarily uses ext4 and occasionally btrfs."
+	/>,
+
+	// Chapter 9
+	<Input
+		question="What is the speed in Mbps of a Hi-Speed USB port?"
+		answer={480}
+		explanation="Hi-Speed USB ports operate at 480 Mbps."
+	/>,
+
+	<Checkbox
+		question="Which of the following wireless protocols require a line-of-sight clearance?"
+		answers={[
+			<Answer correct>satellite</Answer>,
+			<Answer correct>infared</Answer>,
+			<Answer>802.11</Answer>,
+			<Answer>Bluetooth</Answer>,
+			<Answer>NFC</Answer>,
+		]}
+		explanation="There can be no obstruction between satellites or between an infared transmitter and receiver."
 	/>,
 
 	// Custom
